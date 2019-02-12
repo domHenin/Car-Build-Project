@@ -18,5 +18,23 @@ public class Main {
         System.out.println("My Car Model: "+vehicle.getCarModel());
         System.out.println("My Car Year: "+vehicle.getCarYear());
 
+        Vehicle vehicle1 = new Vehicle();
+        System.out.println();
+        System.out.println("\nYour turn!!");
+        System.out.println("Enter Car Make: ");
+        carMake = input.next();
+        vehicle1.changeCarMake(carMake);
+        System.out.println("Enter Car Model: ");
+        carModel=input.next();
+        vehicle1.changeCarModel(carModel);
+        System.out.println("Enter Car Year: ");
+        carYear=input.nextInt();
+        vehicle1.changeCarYear(carYear);
+
+        System.out.println("User Car Make: "+vehicle1.getCarMake());
+        System.out.println("User Car Model: "+vehicle1.getCarModel());
+        System.out.println("User Car Year: "+vehicle1.getCarYear());
+
+
     }
 }
