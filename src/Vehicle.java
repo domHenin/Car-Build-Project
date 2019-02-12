@@ -24,4 +24,6 @@ class Vehicle {
     public void changeCarMake(String newCarMake) { carMake = newCarMake; }
     public void changeCarModel(String newCarModel) { carModel = newCarModel; }
     public void changeCarYear(int newCarYear) { carYear = newCarYear; }
+
+//    User Interaction
 }
