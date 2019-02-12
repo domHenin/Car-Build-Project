@@ -8,6 +8,18 @@ public class Main {
         String carModel;
         int carYear;
 
+        ArrayList<String> carMakes = new ArrayList<>();
+
+        carMakes.add("Acura");
+        carMakes.add("Honda");
+        carMakes.add("Nissan");
+
+        for (int i=0; i<carMakes.size(); i++){
+            System.out.println("Car Make Names: "+carMakes.get(i));
+        }
+
+        System.out.println();
+
         Vehicle vehicle = new Vehicle();
 
         vehicle.setCarMake("Acura");
@@ -19,14 +31,17 @@ public class Main {
         System.out.println("My Car Year: "+vehicle.getCarYear());
 
         Vehicle vehicle1 = new Vehicle();
-        System.out.println();
+
         System.out.println("\nYour turn!!");
+
         System.out.println("Enter Car Make: ");
         carMake = input.next();
         vehicle1.changeCarMake(carMake);
+
         System.out.println("Enter Car Model: ");
         carModel=input.next();
         vehicle1.changeCarModel(carModel);
+
         System.out.println("Enter Car Year: ");
         carYear=input.nextInt();
         vehicle1.changeCarYear(carYear);
